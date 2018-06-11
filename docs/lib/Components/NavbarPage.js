@@ -5,8 +5,9 @@ import { PrismCode } from 'react-prism';
 import PageTitle from '../UI/PageTitle';
 import SectionTitle from '../UI/SectionTitle';
 import NavbarExample from '../examples/Navbar';
-const NavbarExampleSource = require('!!raw!../examples/Navbar');
 import NavbarTogglerExample from '../examples/NavbarToggler';
+const NavbarExampleSource = require('!!raw!../examples/Navbar');
+
 const NavbarTogglerExampleSource = require('!!raw!../examples/NavbarToggler');
 
 export default class NavsPage extends React.Component {
@@ -23,10 +24,10 @@ export default class NavsPage extends React.Component {
           </PrismCode>
         </pre>
         <h4>Navbar Properties</h4>
-        <p>See also <Link to="/components/navs/">Navs</Link> for additional components and PropTypes.</p>
+        <p>See also <Link to="components/navs/">Navs</Link> for additional components and PropTypes.</p>
         <pre>
           <PrismCode className="language-jsx">
-{`Navbar.propTypes = {
+                        {`Navbar.propTypes = {
   light: PropTypes.bool,
   dark: PropTypes.bool,
   fixed: PropTypes.string,
@@ -41,7 +42,7 @@ export default class NavsPage extends React.Component {
         <h4>NavbarBrand Properties</h4>
         <pre>
           <PrismCode className="language-jsx">
-{`NavbarBrand.propTypes = {
+                        {`NavbarBrand.propTypes = {
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string])
   // pass in custom element to use
 }`}
@@ -63,7 +64,7 @@ export default class NavsPage extends React.Component {
         <h4>NavbarToggler Properties</h4>
         <pre>
           <PrismCode className="language-jsx">
-{`NavbarToggler.propTypes = {
+                        {`NavbarToggler.propTypes = {
   type: PropTypes.string,
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string])
   // pass in custom element to use

@@ -1,15 +1,16 @@
-var path = require('path');
-var webpack = require('webpack');
-var StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
-var env = process.env.WEBPACK_BUILD || 'development';
+let path = require('path');
+let webpack = require('webpack');
+let StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
 
-var CleanWebpackPlugin = require('clean-webpack-plugin');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var webpackDevConfig = require('./webpack.base.config')('development');
-var webpackProdConfig = require('./webpack.base.config')('production');
+let env = process.env.WEBPACK_BUILD || 'development';
 
-var paths = [
+let CleanWebpackPlugin = require('clean-webpack-plugin');
+let CopyWebpackPlugin = require('copy-webpack-plugin');
+let ExtractTextPlugin = require('extract-text-webpack-plugin');
+let webpackDevConfig = require('./webpack.base.config')('development');
+let webpackProdConfig = require('./webpack.base.config')('production');
+
+let paths = [
   '/',
   '/components/',
   '/components/layout/',
@@ -44,7 +45,7 @@ var paths = [
   '/404.html'
 ];
 
-var config = [{
+let config = [{
   devtool: 'source-map',
   devServer: {
     contentBase: './build',
@@ -73,7 +74,7 @@ var config = [{
     new webpack.optimize.OccurenceOrderPlugin(),
     new StaticSiteGeneratorPlugin('main', paths, {}),
     new webpack.NoErrorsPlugin(),
-    new ExtractTextPlugin("/assets/style.css")
+    new ExtractTextPlugin('/assets/style.css')
   ],
   module: {
     loaders: [
@@ -92,14 +93,14 @@ var config = [{
       },
       {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract("style-loader", "css-loader")
+        loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
       },
     ]
   },
   resolve: {
     extensions: ['', '.js', '.json'],
     alias: {
-      'bootstrap-css': path.join(__dirname,'node_modules/bootstrap/dist/css/bootstrap.css'),
+      'bootstrap-css': path.join(__dirname, 'node_modules/bootstrap/dist/css/bootstrap.css'),
       reactstrap: path.resolve('./src')
     }
   }

@@ -14,7 +14,7 @@ export default () => {
           <Row>
             <Col>
               <p className="lead">
-                <img src="/assets/logo.png" alt="" width="150px" />
+                <img src="./assets/logo.png" alt="" width="150px" />
               </p>
               <h1 className="jumbotron-heading display-4">reactstrap</h1>
               <p className="lead">
@@ -22,7 +22,7 @@ export default () => {
               </p>
               <p>
                 <Button outline color="danger" href="https://github.com/reactstrap/reactstrap">GitHub</Button>
-                <Button color="danger" tag={Link} to="/components/">Components</Button>
+                <Button color="danger" tag={Link} to="components/">Components</Button>
               </p>
             </Col>
           </Row>
@@ -52,7 +52,7 @@ export default () => {
             <h4>tl;dr</h4>
             <pre>
               <PrismCode className="language-bash">
-{`npm install -g create-react-app
+                {`npm install -g create-react-app
 
 create-react-app my-app
 cd my-app/
@@ -66,18 +66,17 @@ npm start`}
             <p>Install reactstrap and Bootstrap from NPM. Reactstrap does not include Bootstrap CSS so this needs to be installed as well:</p>
             <pre>
               <PrismCode className="language-bash">
-  {`npm install bootstrap --save
-npm install --save reactstrap react react-dom`}
+                {'npm install --save reactstrap react react-dom'}
               </PrismCode>
             </pre>
-            <p>Import Bootstrap CSS in the <code>src/index.js</code> file:</p>
+            <p>Copy bootstrap.css from the UI1 theme folder into the project, and import it in the <code>src/index.js</code> file:</p>
             <pre>
-              <PrismCode className="language-bash">import 'bootstrap/dist/css/bootstrap.min.css';</PrismCode>
+              <PrismCode className="language-bash">import './bootstrap.min.css';</PrismCode>
             </pre>
             <p>Import required reactstrap components within <code>src/App.js</code> file or your custom component files:</p>
             <pre>
               <PrismCode className="language-bash">
-                {`import { Button } from 'reactstrap';`}
+                {'import { Button } from \'reactstrap\';'}
               </PrismCode>
             </pre>
             <p>Now you are ready to use the imported reactstrap components within your component hierarchy defined in the render method. Here is an example <a href="https://gist.github.com/Thomas-Smyth/006fd507a7295f17a8473451938f9935" target="_blank"><code>App.js</code></a> redone using reactstrap.</p>
@@ -105,7 +104,7 @@ npm install --save reactstrap react react-dom`}
             <p>1) Your content is expected to be composed via props.children rather than using named props to pass in Components.</p>
             <pre>
               <PrismCode className="language-jsx">
-{`// Content passed in via props
+                {`// Content passed in via props
 const Example = (props) => {
   return (
     <p>This is a tooltip <TooltipTrigger tooltip={TooltipContent}>example</TooltipTrigger>!</p>

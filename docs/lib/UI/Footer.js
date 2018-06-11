@@ -7,10 +7,8 @@ export default () => {
       <Container>
         <Row>
           <Col className="text-center">
-            <p className="social">
-              <iframe src="https://ghbtns.com/github-btn.html?user=reactstrap&repo=reactstrap&type=star&count=true" frameBorder="0" scrolling="0" width="100" height="20px" />
-              <iframe src="https://ghbtns.com/github-btn.html?user=reactstrap&repo=reactstrap&type=fork&count=true" frameBorder="0" scrolling="0" width="100" height="20px" />
-            </p>
+      Docs originally created by <a href="https://github.com/reactstrap/reactstrap" target="_blank">reactstrap</a>, licensed under <a href="https://github.com/reactstrap/reactstrap/blob/master/LICENSE" target="_blank">MIT</a> and were modified by <a href="https://ui1.io" target="_blank">UI1</a> UI Kit Generator.
+
           </Col>
         </Row>
       </Container>

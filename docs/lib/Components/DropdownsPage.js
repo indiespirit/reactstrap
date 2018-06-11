@@ -43,7 +43,7 @@ export default class DropdownPage extends React.Component {
       <div>
         <PageTitle title="Dropdowns" />
         <p>
-          The <code>Dropdown</code> component is used to pass the <code>isOpen</code> &amp; <code>toggle</code> props via context to the following components: <code>DropdownToggle</code>, <code>DropdownMenu</code>. The <code>DropdownToggle</code> uses the <code>Button</code> component internally, meaning it also accepts all the props the <Link to="/components/buttons/">Button component</Link> accepts.
+          The <code>Dropdown</code> component is used to pass the <code>isOpen</code> &amp; <code>toggle</code> props via context to the following components: <code>DropdownToggle</code>, <code>DropdownMenu</code>. The <code>DropdownToggle</code> uses the <code>Button</code> component internally, meaning it also accepts all the props the <Link to="components/buttons/">Button component</Link> accepts.
         </p>
         <div className="docs-example">
           <DropdownExample />
@@ -56,7 +56,7 @@ export default class DropdownPage extends React.Component {
         <h4>Properties</h4>
         <pre>
           <PrismCode className="language-jsx">
-{`Dropdown.propTypes = {
+                        {`Dropdown.propTypes = {
   disabled: PropTypes.bool,
   direction: PropTypes.oneOf(['up', 'down', 'left', 'right']),
   group: PropTypes.bool,
@@ -131,7 +131,7 @@ DropdownItem.propTypes = {
         </div>
         <pre>
           <PrismCode className="language-jsx">
-{`<Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+                        {`<Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
   <DropdownToggle caret>
     This dropdown's menu is right-aligned
   </DropdownToggle>
@@ -148,25 +148,25 @@ DropdownItem.propTypes = {
         <SectionTitle>Menu Headers</SectionTitle>
         <pre>
           <PrismCode className="language-jsx">
-{'<DropdownItem header>Header</DropdownItem>'}
+                        {'<DropdownItem header>Header</DropdownItem>'}
           </PrismCode>
         </pre>
         <SectionTitle>Menu Dividers</SectionTitle>
         <pre>
           <PrismCode className="language-jsx">
-{'<DropdownItem divider/>'}
+                        {'<DropdownItem divider/>'}
           </PrismCode>
         </pre>
         <SectionTitle>Menu Items</SectionTitle>
         <pre>
           <PrismCode className="language-jsx">
-{'<DropdownItem>Action</DropdownItem>'}
+                        {'<DropdownItem>Action</DropdownItem>'}
           </PrismCode>
         </pre>
         <SectionTitle>Disabled Menu Items</SectionTitle>
         <pre>
           <PrismCode className="language-jsx">
-{'<DropdownItem disabled>Action</DropdownItem>'}
+                        {'<DropdownItem disabled>Action</DropdownItem>'}
           </PrismCode>
         </pre>
         <SectionTitle>Sizing</SectionTitle>
@@ -179,7 +179,7 @@ DropdownItem.propTypes = {
         </div>
         <pre>
           <PrismCode className="language-jsx">
-{`<Dropdown group isOpen={this.state.dropdownOpen} size="lg" toggle={this.toggle}>
+                        {`<Dropdown group isOpen={this.state.dropdownOpen} size="lg" toggle={this.toggle}>
   <DropdownToggle caret>
     Dropdown
   </DropdownToggle>
@@ -269,7 +269,7 @@ DropdownItem.propTypes = {
         </div>
         <pre>
           <PrismCode className="language-jsx">
-{`<Dropdown direction="up" isOpen={isOpen} toggle={toggle}>
+                        {`<Dropdown direction="up" isOpen={isOpen} toggle={toggle}>
   <DropdownToggle caret>
     Dropup
   </DropdownToggle>
@@ -347,7 +347,7 @@ DropdownItem.propTypes = {
         </div>
         <pre>
           <PrismCode className="language-jsx">
-{`<Dropdown isOpen={isOpen} toggle={toggle}>
+                        {`<Dropdown isOpen={isOpen} toggle={toggle}>
   <DropdownToggle>
     Dropdown
   </DropdownToggle>

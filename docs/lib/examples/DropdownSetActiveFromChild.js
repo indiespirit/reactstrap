@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
-export default function Example () {
+export default function Example() {
   return (
     <Navbar color="light" light expand="md">
       <Nav className="ml-auto" navbar>
